@@ -9,10 +9,6 @@ function fuzzyMatch(drivers, str) {
     return drivers.filter(driver => driver.startsWith(str));
 }
 
-console.log(fuzzyMatch(drivers, "Mu"));
-
 function matchName(drivers, str) {
     return drivers.filter(driver => driver.name === str);
 }
-
-console.log(findMatching(drivers, "Allan"));

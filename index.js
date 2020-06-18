@@ -4,10 +4,9 @@ let drivers = [{ name: "Allan", age: 25 }, { name: "Mustafa", age: 22 }, { name:
 function findMatching(drivers, str) {
     return drivers.filter(driver => driver.toLowerCase() === str.toLowerCase());
 }
-console.log(findMatching(drivers, "Allan"));
 
 function fuzzyMatch(drivers, str) {
-    return drivers.filter(driver => driver.name.startsWith(str));
+    return drivers.filter(driver => driver.startsWith(str));
 }
 
 console.log(fuzzyMatch(drivers, "Mu"));

@@ -2,7 +2,7 @@
 
 let drivers = [{ name: "Allan", age: 25 }, { name: "Mustafa", age: 22 }, { name: "MuWissam", age: 28 }, { name: "AllAn", age: 20 }]
 function findMatching(drivers, str) {
-    return drivers.filter(driver => driver.name.toLowerCase() === str.toLowerCase());
+    return drivers.filter(driver => driver.toLowerCase() === str.toLowerCase());
 }
 console.log(findMatching(drivers, "Allan"));
 
